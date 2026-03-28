@@ -3,7 +3,7 @@
 Selamat datang di Proyek OSKA IPTV (Sistem Manajemen Hotel & Kiosk TV).
 Proyek ini terdiri dari 3 blok arsitektur utama:
 1. **Backend**: Python (FastAPI) & PostgreSQL
-2. **Frontend (Admin Panel)**: Next.js + Tailwind CSS (Tema Neo-Brutalism)
+2. **Frontend (Admin Panel)**: Next.js + Tailwind CSS
 3. **Android TV (Kiosk Client)**: Kotlin Jetpack Compose TV
 
 ---
