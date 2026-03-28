@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+:root {
+  --black: #0a0a0a;
+  --white: #f5f0e8;
+  --yellow: #ffd60a;
+  --pink: #ff006e;
+  --blue: #3a86ff;
+  --green: #06d6a0;
+  --border: 3px solid #0a0a0a;
+  --shadow: 5px 5px 0px #0a0a0a;
+  --shadow-lg: 8px 8px 0px #0a0a0a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--black);
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+}
+
+/* Neo-Brutalism Card */
+.nb-card {
+  border: var(--border);
+  box-shadow: var(--shadow);
+  background: white;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.nb-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Neo-Brutalism Button */
+.nb-btn {
+  border: 3px solid #0a0a0a;
+  box-shadow: 4px 4px 0px #0a0a0a;
+  font-weight: 700;
+  transition: transform 0.1s, box-shadow 0.1s;
+  cursor: pointer;
+}
+
+.nb-btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #0a0a0a;
+}
+
+.nb-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px #0a0a0a;
+}
+
+/* Neo-Brutalism Input */
+.nb-input {
+  border: 3px solid #0a0a0a;
+  background: #fff;
+  font-weight: 600;
+  outline: none;
+}
+
+.nb-input:focus {
+  box-shadow: 4px 4px 0px #0a0a0a;
+}
+
+/* Badge */
+.nb-badge {
+  border: 2px solid #0a0a0a;
+  font-weight: 800;
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Sidebar */
+.nb-sidebar {
+  border-right: 3px solid #0a0a0a;
+  background: var(--black);
+  color: white;
+}
+
+.nb-nav-item {
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  border-bottom: 2px solid #2a2a2a;
+  cursor: pointer;
+  transition: background 0.1s, color 0.1s;
+}
+
+.nb-nav-item:hover,
+.nb-nav-item.active {
+  background: var(--yellow);
+  color: var(--black);
+  border-left: 4px solid var(--yellow);
+}
