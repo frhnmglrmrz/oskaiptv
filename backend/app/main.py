@@ -1,12 +1,23 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
+from fastapi.responses import JSONResponse
+from slowapi import _rate_limit_exceeded_handler
+from slowapi.errors import RateLimitExceeded
 from app.api.router import api_router
+from app.core.limiter import limiter
 
 app = FastAPI(
     title="OSKA IPTV API Server",
     description="Menangani Admin Hotel Panel dan Aplikasi Client Android TV",
     version="1.0.0"
+)
+
+# Daftarkan rate limiter ke state app agar bisa di-share ke semua router
+app.state.limiter = limiter
+app.add_exception_handler(
+    RateLimitExceeded,
+    _rate_limit_exceeded_handler  # type: ignore[arg-type]
 )
 
 app.add_middleware(
