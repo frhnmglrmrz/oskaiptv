@@ -1,4 +1,4 @@
-# Beranda Panduan OSKA IPTV 🚀
+# Beranda Panduan OSKA IPTV
 
 Selamat datang di Proyek OSKA IPTV (Sistem Manajemen Hotel & Kiosk TV).
 Proyek ini terdiri dari 3 blok arsitektur utama:
@@ -8,7 +8,7 @@ Proyek ini terdiri dari 3 blok arsitektur utama:
 
 ---
 
-## 🛠️ Persyaratan Lingkungan (Prerequisites)
+##  Persyaratan Lingkungan (Prerequisites)
 Sebelum menjalankan, pastikan mesin / laptop Anda telah terinstal:
 - **Node.js**: v18+ (Disarankan LTS)
 - **Python**: v3.10+
@@ -17,7 +17,7 @@ Sebelum menjalankan, pastikan mesin / laptop Anda telah terinstal:
 
 ---
 
-## 🕹️ Langkah 1: Menjalankan Backend (FastAPI)
+## Langkah 1: Menjalankan Backend (FastAPI)
 
 Data kunci sistem tersimpan di sini. Pastikan PostgreSQL Anda hidup.
 1. Buka Terminal baru dan masuk ke folder `backend`:
@@ -46,7 +46,7 @@ Data kunci sistem tersimpan di sini. Pastikan PostgreSQL Anda hidup.
 
 ---
 
-## 🕹️ Langkah 2: Menjalankan Web Admin (Frontend)
+## Langkah 2: Menjalankan Web Admin (Frontend)
 
 Platform manajemen kamar, pesanan dapur, dan konfigurasi TV.
 1. Buka Terminal baru dan masuk ke folder `frontend`:
@@ -66,7 +66,7 @@ Platform manajemen kamar, pesanan dapur, dan konfigurasi TV.
 
 ---
 
-## 🕹️ Langkah 3: Menjalankan Klien Android TV (Cara Opsional)
+## Langkah 3: Menjalankan Klien Android TV (Cara Opsional)
 
 Untuk mensimulasikan layar TV yang ada di hotel.
 1. Buka folder root proyek ini di **Android Studio**.
