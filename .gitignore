@@ -1,0 +1,6 @@
+
+# Abaikan semua file markdown
+*.md
+# Tapi JANGAN abaikan how-to-start.md
+!how-to-start.md
+!README.md
