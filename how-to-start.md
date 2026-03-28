@@ -34,7 +34,11 @@ Data kunci sistem tersimpan di sini. Pastikan PostgreSQL Anda hidup.
    pip install -r requirements.txt
    ```
 4. Pastikan file URL Database telah terhubung (cek config `.env` / `database.py` Anda). Secara bawaan, kita menggunakan `postgresql://postgres:postgres@localhost/oskapanel`.
-5. Jalankan server FastAPI dengan uvicorn:
+5. **Jalankan Migrasi Database (Wajib Pertama Kali):** Setelah postgres menyala, ciptakan struktur tabel menggunakan Alembic.
+   ```bash
+   alembic upgrade head
+   ```
+6. Jalankan server FastAPI dengan uvicorn:
    ```bash
    uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
    ```
